@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 // Enable CORS for all routes and origins (you can restrict this later)
 app.use(cors({
-  origin: "http://localhost:3000", // The frontend URL
+  origin: "http://localhost:5000", // The frontend URL
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization",
 }));
@@ -52,7 +52,7 @@ mongoose
 
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
